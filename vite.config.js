@@ -1,3 +1,3 @@
 export default {
-  base: "/english-dictionary/",
+  // base: "/english-dictionary/",
 };

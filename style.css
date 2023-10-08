@@ -19,9 +19,9 @@
 
 .card {
   width: min(100%, 600px);
-  background-color: aqua;
+  background-color: #87ceeb;
   border-radius: 16px;
-  box-shadow: 0 5px 6px black;
+  box-shadow: 0 5px 6px rgb(29, 29, 29);
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -60,10 +60,21 @@
   background-color: aliceblue;
   overflow: hidden;
   align-items: center;
+  transition: all 200ms ease-in;
+  border: 1px solid transparent;
+}
+.translator__prompt:focus-within {
+  border: 1px solid #4682b4;
 }
 .translator__prompt-input {
   padding: 4px 8px;
   flex: 1 1 auto;
+  border: none;
+  font-size: 16px;
+}
+.translator__prompt-input:focus {
+  border: none;
+  outline: none;
 }
 
 .translator__prompt-clear {
@@ -109,7 +120,7 @@
   transition: all 200ms ease-in;
 }
 .translator__suggestion:hover {
-  border-color: red;
+  border-color: #4682b4;
 }
 
 .translator__switcher {

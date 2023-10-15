@@ -45,6 +45,10 @@ const dictionary = [
     ru: ["аварийный выход"],
     en: ["abend exit"],
   },
+  {
+    ru: ["аварийный выход"],
+    en: ["AC", "Access Contro", "Access Class"],
+  },
 ];
 
 translatorPromptEl.addEventListener("input", (e) => {

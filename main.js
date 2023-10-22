@@ -18,38 +18,13 @@ const translatorSuggestionsEl = document.querySelector(
 );
 
 const languages = {
-  en: "Англиский",
+  en: "Английский",
   ru: "Русский",
 };
 let languageFrom = "en";
 let languageTo = "ru";
 
-const dictionary = [
-  {
-    ru: ["сокращать", "укорачивать"],
-    en: ["abbreviate"],
-  },
-  {
-    ru: ["сокращение", "сокращенное наименование", "аббревиатура"],
-    en: ["abbreviation"],
-  },
-  {
-    ru: ["Американская ассоциация по коммуникациям в сфере бизнеса"],
-    en: ["ABCA"],
-  },
-  {
-    ru: ["абелева группа"],
-    en: ["abelian group"],
-  },
-  {
-    ru: ["аварийный выход"],
-    en: ["abend exit"],
-  },
-  {
-    ru: ["аварийный выход"],
-    en: ["AC", "Access Contro", "Access Class"],
-  },
-];
+import dictionary from "./translations.json";
 
 translatorPromptEl.addEventListener("input", (e) => {
   const prompt = e.target.value;
